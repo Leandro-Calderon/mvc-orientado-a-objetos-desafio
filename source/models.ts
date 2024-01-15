@@ -3,5 +3,7 @@ class Contact {
   name: string = "";
 }
 
-class ContactsCollection {}
-export { ContactsCollection };
+class ContactsCollection {
+  data:Contact[] = [];
+}
+export { ContactsCollection, Contact };

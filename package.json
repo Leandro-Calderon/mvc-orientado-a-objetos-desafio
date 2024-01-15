@@ -2,13 +2,16 @@
   "name": "ava-typescript-basic",
   "description": "Basic example for AVA with TypeScript",
   "scripts": {
-    "test": "rimraf ./build && ava"
+    "test": "rimraf ./build && ava",
+    "start": "ts-node index.ts"
   },
   "devDependencies": {
     "@ava/typescript": "^2.0.0",
     "@sindresorhus/tsconfig": "^1.0.2",
     "@types/jsonfile": "^6.1.0",
     "ava": "^3.15.0",
+    "minimist": "^1.2.8",
+    "ts-node": "^10.9.2",
     "typescript": "^4.3.4"
   },
   "ava": {
@@ -22,5 +25,10 @@
   "dependencies": {
     "jsonfile": "^6.1.0",
     "rimraf": "^3.0.2"
-  }
+  },
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:Leandro-Calderon/mvc-orientado-a-objetos-desafio.git",
+  "author": "Leandro-Calderon <mellyleo17@gmail.com>",
+  "license": "MIT"
 }
